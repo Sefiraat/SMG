@@ -321,6 +321,102 @@ public final class SMGItemSetup {
                 .setItem(Material.AMETHYST_BLOCK)
                 .register(plugin);
 
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_DIORITE,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_COBBLESTONE, new ItemStack(Material.DIORITE), null,
+                        null, null, null,
+                        null, null, null
+                }, 4)
+                .setItem(Material.DIORITE)
+                .register(plugin);
+
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_ANDESITE,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_COBBLESTONE, new ItemStack(Material.ANDESITE), null,
+                        null, null, null,
+                        null, null, null
+                }, 4)
+                .setItem(Material.ANDESITE)
+                .register(plugin);
+
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_GRANITE,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_COBBLESTONE, new ItemStack(Material.GRANITE), null,
+                        null, null, null,
+                        null, null, null
+                }, 4)
+                .setItem(Material.GRANITE)
+                .register(plugin);
+
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_BLACKSTONE,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_NETHERRACK, new ItemStack(Material.BLACKSTONE), null,
+                        null, null, null,
+                        null, null, null
+                }, 4)
+                .setItem(Material.BLACKSTONE)
+                .register(plugin);
+
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_DEEPSLATE,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_STONE, new ItemStack(Material.COBBLED_DEEPSLATE), null,
+                        null, null, null,
+                        null, null, null
+                }, 4)
+                .setItem(Material.COBBLED_DEEPSLATE)
+                .register(plugin);
+
+        new BrokenGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_CLAY_BROKEN,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_SAND, SMGItems.SMG_GENERATOR_GRAVEL, SMGItems.SMG_GENERATOR_SAND,
+                        SMGItems.SMG_GENERATOR_GRAVEL, new ItemStack(Material.WATER_BUCKET), SMGItems.SMG_GENERATOR_GRAVEL,
+                        SMGItems.SMG_GENERATOR_SAND, SMGItems.SMG_GENERATOR_GRAVEL, SMGItems.SMG_GENERATOR_SAND
+                })
+                .register(plugin);
+
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_CLAY,
+                RecipeType.SMELTERY,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_CLAY_BROKEN, null, null,
+                        null, null, null,
+                        null, null, null
+                }, 8)
+                .setItem(Material.CLAY)
+                .register(plugin);
+
+        new MaterialGenerator(
+                SMGItems.SMG_ITEM_CATEGORY,
+                SMGItems.SMG_GENERATOR_TERRACOTTA,
+                RecipeType.ENHANCED_CRAFTING_TABLE,
+                new ItemStack[]{
+                        SMGItems.SMG_GENERATOR_CLAY, new ItemStack(Material.TERRACOTTA), SMGItems.SMG_GENERATOR_CLAY,
+                        new ItemStack(Material.TERRACOTTA), new ItemStack(Material.LAVA_BUCKET), new ItemStack(Material.TERRACOTTA),
+                    SMGItems.SMG_GENERATOR_CLAY, new ItemStack(Material.TERRACOTTA), SMGItems.SMG_GENERATOR_CLAY
+                }, 10)
+                .setItem(Material.TERRACOTTA)
+                .register(plugin);
+
+
         new BrokenGenerator(
             SMGItems.SMG_ITEM_CATEGORY,
             SMGItems.SMG_GENERATOR_OBSIDIAN_BADLY_FORMED,
